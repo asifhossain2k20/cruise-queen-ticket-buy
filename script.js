@@ -1,4 +1,5 @@
 
+//increase & Decrease
 
 function counterElement(isIncrease,input){
     const inputNumber=document.getElementById(input+"-count");
@@ -16,6 +17,8 @@ function counterElement(isIncrease,input){
     inputNumber.value=inputNewCount;
 }
 
+//total cost Display
+
 function totalCharge(){
 
     const inputCount1=getCountNumber('input1');
@@ -31,11 +34,15 @@ function totalCharge(){
 
 }
 
+//id read and parse int
+
 function getCountNumber(id){
     const inputNumber=document.getElementById(id+'-count');
     const inputCount=parseInt(inputNumber.value);
     return inputCount;
 }
+
+//go to next page
 
 document.getElementById('nextPage').addEventListener('click',function(){
     const bookPage=document.getElementById('booking-page');
@@ -45,6 +52,8 @@ document.getElementById('nextPage').addEventListener('click',function(){
     grandTotal();
 
 })
+
+//conformation page calculation
 
 function grandTotal(){
     const inputCount1=getCountNumber('input1');
