@@ -6,7 +6,6 @@ function counterElement(isIncrease,input){
     const inputCount=parseInt(inputNumber.value);
 
     let inputNewCount=inputCount;
-    totalCharge();
     if(isIncrease==true){
         inputNewCount=inputNewCount+1;
     }
@@ -15,6 +14,7 @@ function counterElement(isIncrease,input){
         inputNewCount=inputNewCount-1;
     }
     inputNumber.value=inputNewCount;
+    totalCharge();
 }
 
 //total cost Display
